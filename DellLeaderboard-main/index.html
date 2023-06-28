@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaderboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A leaderboard for Dell.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="images/dell-favicon.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="https://kit.fontawesome.com/ad32a05e0e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-left">
+        <img src="images/dell.svg" alt="Left Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Leaderboard</a></li>
+          <li><a href="ideas.html">Ideas</a></li>
+          <li><a href="terms.html">T&amp;C's</a></li>
+        </ul>
+      </nav>
+      <div class="logo-right">
+        <img src="images/intel-01.svg" alt="Right Logo">
+      </div>
+    </header>
+      <table>
+        <thead>
+          <tr class="table-header">
+            <th>Position</th>
+            <!-- <th>Phone Number</th> -->
+            <th>Name</th>
+            <th>Percentage (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="fa-solid fa-trophy"></i>1</td>
+                <td>Medium Business</td>
+                <td>117%</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-medal" id="medal-2"></i>2</td>
+                <td>Ent Corp UK</td>
+                <td>106%</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-medal" id="medal-3"></i>3</td>
+                <td>Public</td>
+                <td>76%</td>
+            </tr>
+            <tr>
+                <td></i>4</td>
+                <td>Channels</td>
+                <td>74%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Ent Corp London</td>
+              <td>65%</td>
+          </tr>
+        </tbody>
+      </table>
+      </br></br>
+      <p style="font-size: 35px"><strong>Don’t forget the gate to winning the $20k is us retaining #1 Market Share. <br>Utilise Stock in Coventry this week to maximise shipments.</strong></p>
+      <p style="font-size: 25px">May the best team win!<p>
+      <!-- <button id="reset-btn">RESET TABLE</button>
+      <button id="add-row-btn">ADD NEW ROW</button>
+      <button id="export-btn">EXPORT</button> -->
+    <!-- </main>
+    <div id="add-row-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form>
+          <label for="name">Name:</label>
+          <br>
+          <input type="text" id="name-input" placeholder="John Doe"> -->
+          <!-- <br>
+          <label for="phone">Phone Number:</label>
+          <br>
+          <input type="text" id="phone-input" placeholder="1234 567 890"> -->
+          <!-- <br>
+          <label for="lap-time" pattern="\d{2}:\d{2}">Lap Time:</label>
+          <br>
+          <input type="time" id="lap-time-input" placeholder="00:00">
+          <br><br>
+          <button type="submit" id="submit-btn">CONFIRM</button>
+        </form>
+      </div>
+    </div> -->
+    <div id="popup-modal" class="modal">
+      <div class="modal-content">
+        <h2>This week's top team on the leaderboard is:</h2>
+        <h1 id="top-team"></h1>
+        <canvas id="confetti-canvas"></canvas>
+      </div>
+    </div>
+  </main>
+    <script src="script.js"></script>
+  </body>
+</html>
